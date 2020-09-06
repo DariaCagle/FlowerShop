@@ -16,12 +16,11 @@ namespace FlowerShop
         {
             flowers.Add(flower);
         }
-        public static void CreateBunch()
+
+        public static Flower[] GetFlowers()
         {
-            
-
-
-
+            return flowers.ToArray();
         }
+
     }
 }

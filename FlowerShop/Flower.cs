@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FlowerShop
 {
-    public class Flower
+    public abstract class Flower
     {
         public double price;
         public string color;
@@ -15,18 +15,31 @@ namespace FlowerShop
 
     class Rose : Flower
     {
-        public new double price = 10;
+        public Rose()
+        {
+            price = 10;
+            spinescent = true;
+        }
+        public new double price;
         public bool spinescent;
     }
 
     class LongRose : Rose
     {
-        public new double price = 13;
+        public LongRose()
+        {
+            price = 13;
+        }
+        public new double price;
     }
 
     class Orchid : Flower
     {
-
+        public Orchid()
+        {
+            price = 18;
+        }
+        public new double price;
         private bool InAPot;
         public double Price 
         { 
@@ -36,8 +49,17 @@ namespace FlowerShop
                 {
                     return 20;
                 }
-                else return 18;
+                else return price;
             }
         }
+    }
+
+    class Tulip : Flower
+    {
+        public Tulip() 
+        {
+            price = 7;
+        }
+        new string color;
     }
 }
