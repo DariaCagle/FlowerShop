@@ -20,7 +20,6 @@ namespace FlowerShop
             price = 10;
             spinescent = true;
         }
-        public new double price;
         public bool spinescent;
     }
 
@@ -30,7 +29,6 @@ namespace FlowerShop
         {
             price = 13;
         }
-        public new double price;
     }
 
     class Orchid : Flower
@@ -39,7 +37,6 @@ namespace FlowerShop
         {
             price = 18;
         }
-        public new double price;
         private bool InAPot;
         public double Price 
         { 
